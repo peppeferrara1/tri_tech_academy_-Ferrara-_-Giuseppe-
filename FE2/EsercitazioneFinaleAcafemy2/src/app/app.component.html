@@ -1,0 +1,10 @@
+<div *ngIf="getLoginService.loginIndex">
+    <app-header-component></app-header-component>
+</div>
+<div *ngIf="!getLoginService.loginIndex">
+    <app-login-component></app-login-component>
+</div>
+<router-outlet></router-outlet>
+
+
+

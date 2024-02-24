@@ -1,0 +1,20 @@
+<h1 class="h1Title">Here are the movements related to the product you selected.</h1>
+<div *ngFor="let movemen of movement">
+    <div class="display">
+        <div class="card">
+            <h1>Id movement:</h1>
+            <h2>{{ movemen.idMovement }}</h2>
+            <h1>Quantity change:</h1>
+            <h2>{{ movemen.quantityChange }}</h2>
+            <h1>Transaction time:</h1>
+            <h2>{{ movemen.timestamp }}</h2>
+            <h1>Type:</h1>
+            <h2>{{ movemen.type }}</h2>
+        </div>
+        <div id="positionButton" (click)="deleteMovement(movemen.idMovement)">
+            <button>
+                <img src="../../assets/images/remove.png" width="30px" height="30px">
+            </button>
+        </div>
+    </div>
+</div>

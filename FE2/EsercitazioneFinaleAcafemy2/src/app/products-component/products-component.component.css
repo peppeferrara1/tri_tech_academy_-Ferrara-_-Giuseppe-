@@ -1,0 +1,49 @@
+.card{
+    border-radius: 25px;
+    border: 4px rgb(44, 42, 42) solid;
+    width: 35rem;
+    height: 22rem;
+    text-align: left;
+    padding-left: 1rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    display: flex;
+    color: rgb(44, 42, 42);
+    cursor: pointer;
+}
+.display{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+h1{
+    font-weight: lighter;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+h2{
+    margin: 0;
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+button{
+    all: unset;
+    cursor: pointer;
+}
+#positionButton{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 0.5rem;
+}
+.h1Title{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
+.id{
+    margin: 1rem;
+}
+.prod{
+    width: 35rem;
+}

@@ -1,0 +1,25 @@
+<h1 class="h1Title">Here are the products related to the category you selected.</h1>
+<div *ngFor="let product of products">
+    <div class="display">
+        <div class="card" (click)="showMovement(product.idProduct)" routerLink="/movement">
+            <div class="prod">
+                <h1>Name:</h1>
+                <h2>{{ product.name }}</h2>
+                <h1>Description:</h1>
+                <h2>{{ product.description }}</h2>
+                <h1>Quantity:</h1>
+                <h2>{{ product.quantity }}</h2>
+                <h1>Price:</h1>
+                <h2>{{ product.price }}</h2>
+            </div>
+            <div class="id">
+                <h2>{{ product.idProduct }}</h2>
+            </div>
+        </div>
+        <div id="positionButton" (click)="deleteProducts(product.idProduct)">
+            <button>
+                <img src="../../assets/images/remove.png" width="30px" height="30px">
+            </button>
+        </div>
+    </div>
+</div>

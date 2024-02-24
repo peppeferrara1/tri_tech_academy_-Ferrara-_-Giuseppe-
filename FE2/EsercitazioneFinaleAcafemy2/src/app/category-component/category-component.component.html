@@ -1,0 +1,19 @@
+<h1 class="h1Title">Click on a category to view the products related to it.</h1>
+<div *ngFor="let categ of category">
+    <div class="display">
+        <div class="card" (click)="showProduct(categ.idCategory)" routerLink="/products">
+            <div class="id">
+                <h1 id="h1Id">{{categ.idCategory}}</h1>
+            </div>
+            <div class="name">
+                <h1>{{categ.name}}</h1>
+            </div> 
+        </div>
+        <div id="positionButton">
+            <button (click)="deleteCategory(categ.idCategory)">
+                <img src="../../assets/images/remove.png" width="30px" height="30px">
+            </button>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,33 @@
+<h1>The chart shows the category to which each product belongs.</h1>
+<div class="display">
+  <div *ngFor="let categor of category">
+    <h2>Category = {{ categor.idCategory }} ⟶ {{ categor.name }}</h2>
+  </div>
+  <div class="chart">
+    <div>
+      <canvas id="mychart">{{ chart }}</canvas>
+    </div>
+  </div>
+</div>
+
+<h1>The chart displays the quantity of each product in stock.</h1>
+<div class="display">
+    <div class="chart">
+        <div>
+            <canvas  id="chart" >{{ chart }}</canvas>
+        </div>
+    </div>
+</div>
+
+<h1>The chart represents the variation of the product quantity over time.</h1>
+<h2>Each bar represents product.</h2>
+<div class="display">
+    <div class="chart">
+        <div>
+            <canvas  id="terzoChart" >{{ chart }}</canvas>
+        </div>
+    </div>
+</div>
+
+
+

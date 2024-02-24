@@ -1,0 +1,47 @@
+<div class="displayForm">
+    <div class="borderForm">
+        <h1 class="title">Add or update category</h1>
+        <div class="positionForm">
+            <form [formGroup]="formCategory" (ngSubmit)="onSubmit()" class="display">
+                <label for="idCategory">Id Category:</label>
+                <input type="number" id="idCategory" formControlName="idCategory" />
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" formControlName="name" />
+
+                <button type="submit" [disabled]="!formCategory.valid">Add</button>
+                <button type="submit" [disabled]="!formCategory.valid" (click)="updateCategory()">Update</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="displayForm">
+    <div class="borderForm">
+        <h1 class="title">Add or update product</h1>
+        <div class="positionForm">
+            <form [formGroup]="formProducts" (ngSubmit)="onSubmit2()" class="display">
+                <label for="idProducts">Id Products:</label>
+                <input type="number" id="idProducts" formControlName="idProduct" />
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" formControlName="name" />
+
+                <label for="description">Description:</label>
+                <input type="text" id="description" formControlName="description" />
+
+                <label for="idCategory">Id Category:</label>
+                <input type="number" id="idCategory" formControlName="idCategory" />
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" formControlName="quantity" />
+
+                <label for="price">Price:</label>
+                <input type="number" id="price" formControlName="price" />
+
+                <button type="submit" [disabled]="!formProducts.valid">Add</button>
+                <button type="submit" [disabled]="!formProducts.valid" (click)="updateProducts()">Update</button>
+            </form>
+        </div>
+    </div>
+</div>

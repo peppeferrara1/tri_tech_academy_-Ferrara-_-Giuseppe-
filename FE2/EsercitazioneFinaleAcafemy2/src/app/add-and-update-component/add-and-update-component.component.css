@@ -1,0 +1,39 @@
+.display{
+    display: inline-grid;
+}
+.positionForm{
+    display: flex;
+    justify-content: center;
+}
+.title{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: lighter; 
+}
+input{
+    width: 20rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+    font-size: 1.3rem;
+    background-color: rgb(235, 235, 235);
+}
+label{
+    font-size: 1.5rem;
+    padding: 3px;
+}
+button{
+    height: 2rem;
+    margin: 1rem;
+}
+.displayForm{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+.borderForm{
+    border: 4px rgb(44, 42, 42) solid;
+    width: fit-content;
+    height: fit-content;
+    padding: 2rem;
+    border-radius: 25px;
+}

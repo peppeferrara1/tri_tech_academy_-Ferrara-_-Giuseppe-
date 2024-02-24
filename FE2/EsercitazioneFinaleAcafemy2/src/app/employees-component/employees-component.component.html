@@ -1,0 +1,26 @@
+<h1>Here is the list of our employees</h1>
+<div class="display">
+    <table>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Actions</th>
+        </tr>
+        <tr *ngFor="let employee of employees">
+          <td>{{employee.name}}</td>
+          <td>{{employee.email}}</td>
+          <td>{{employee.role}}</td>
+          <td>
+            <div class="displayButton">
+              <button (click)="deleteEmployees(employee.idEmployee)">
+                <img src="../../assets/images/remove.png" width="25px" height="25px">
+              </button>
+            </div>
+        </td>
+        </tr>
+    </table>
+</div>
+
+
+
